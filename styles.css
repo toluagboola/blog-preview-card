@@ -1,0 +1,86 @@
+:root {
+  --grey: hsl(0, 0%, 50%);
+  --black: hsl(0, 0%, 7%);
+  --yellow: hsl(47, 88%, 63%);
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("assets/fonts/Figtree-VariableFont_wght.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Figtree";
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--yellow);
+  position: relative;
+}
+
+.card {
+  padding: 20px;
+  max-width: 320px;
+  border-radius: 20px;
+  border: 1px solid var(--black);
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.75) 10px 10px 0px 0px;
+}
+
+.card h2 {
+  font-weight: 800;
+}
+
+.card h2:hover {
+  cursor: pointer;
+  color: var(--yellow);
+}
+
+.card p {
+  color: var(--grey);
+  line-height: 1.5;
+}
+
+.illustration {
+  border-radius: 20px;
+}
+
+.category {
+  width: fit-content;
+  background: var(--yellow);
+  margin: 20px 0 15px 0;
+  font-weight: 800;
+  padding: 6px 13px;
+  border-radius: 5px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.author-name {
+  font-weight: 800;
+}
+
+.attribution {
+  position: absolute;
+  text-align: center;
+  bottom: 40px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    margin: 0 10px;
+    max-width: 290px;
+  }
+}
